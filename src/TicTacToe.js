@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import Board from "./Board";
 
 const TicTacToe = () => {
@@ -32,8 +32,6 @@ const TicTacToe = () => {
     setBoard(newBoard);
     setIsUserTurn(false);
     checkWinner(newBoard);
-
-    // pcMove(newBoard);
   };
 
   const checkWinner = (currentBoard) => {

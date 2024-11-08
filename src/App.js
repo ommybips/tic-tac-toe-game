@@ -12,9 +12,7 @@ import { auth } from "./firebase";
 import React, { useEffect } from "react";
 
 function App() {
-  const [user, loading, error] = useAuthState(auth);
-
-
+  const [user] = useAuthState(auth);
 
   return (
     <Router>
